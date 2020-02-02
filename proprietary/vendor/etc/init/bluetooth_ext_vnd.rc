@@ -1,0 +1,70 @@
+# hidl : hidl server
+service bluetoothext-1-0-service /vendor/bin/hw/vendor.hardware.wl.bt.bluetoothext@1.0-service
+    interface vendor.hardware.wl.bt.bluetoothext@1.0::IBluetoothExt default
+    class hal
+    user bluetooth
+    group root bluetooth system wakelock net_bt_admin sdcard_rw media_rw
+    disabled
+    oneshot
+
+on property:vendor.wl.bt.bds.serv=1
+    start bluetoothext-1-0-service
+
+on property:vendor.wl.bt.bds.serv=0
+    stop  bluetoothext-1-0-service
+
+# hidl : bluedroidstack client
+service bdt /vendor/bin/bdt
+    class late_start
+    user root
+    group root bluetooth system wakelock net_bt_admin sdcard_rw media_rw
+    seclabel u:r:bluetooth_ext_vnd:s0
+    disabled
+    oneshot
+
+# 8615 : btduttest
+service bt_dut_test /vendor/bin/bt_dut_test
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:bluetooth_ext_vnd:s0
+    oneshot
+
+on property:vendor.wl.bt.8615.dut=1
+    setprop vendor.wl.bt.dut.cmd dut_mode
+    start bt_dut_test
+
+on property:vendor.wl.bt.8615.dut=0
+    stop  bt_dut_test
+
+# 8615 : wirelesstest
+service wirelesstest /vendor/bin/wireless_test
+    class late_start
+    user root
+    group root
+    socket wirelesstest stream 666 bluetooth bluetooth
+    disabled
+    seclabel u:r:bluetooth_ext_vnd:s0
+    oneshot
+
+on property:vendor.wl.bt.8615.wltest=1
+    start wirelesstest
+
+on property:vendor.wl.bt.8615.wltest=0
+    stop wirelesstest
+
+# ftmdtest
+service nbftmd /vendor/bin/ftmdaemon -n
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:ftmdtest:s0
+    oneshot
+
+on property:vendor.wl.bt.ftmdaemon=1
+    start nbftmd
+
+on property:vendor.wl.bt.ftmdaemon=0
+    stop nbftmd
