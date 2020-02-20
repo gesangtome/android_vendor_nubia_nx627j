@@ -1812,5 +1812,4 @@ PRODUCT_PACKAGES += \
     QdcmFF \
     colorservice \
     WfdCommon \
-    ifaa_fingerprint \
-    tcmiface
+    ifaa_fingerprint
