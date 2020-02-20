@@ -19,6 +19,368 @@
 soong_namespace {
 }
 
+/* Import vendor display blobs on /system */
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.0_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.1_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.2_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.2.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.2.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.3_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.3.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.3.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.4_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.4.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.4.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.5_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.5.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.5.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.6_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.6.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.6.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.7_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.7.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.7.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.8_system",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.display.config@1.8.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.display.config@1.8.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+/* Import vendor display blobs on /vendor */
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.0",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.1",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.2",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.2.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.2.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.3",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.3.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.3.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.4",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.4.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.4.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.5",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.5.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.5.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.6",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.6.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.6.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.7",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.7.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.7.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.8",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.8.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.8.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.9",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.9.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.9.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.display.config@1.10",
+	owner: "nubia",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vendor.display.config@1.10.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.display.config@1.10.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libantradio",
 	owner: "nubia",

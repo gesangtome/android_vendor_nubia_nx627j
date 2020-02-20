@@ -1813,3 +1813,31 @@ PRODUCT_PACKAGES += \
     colorservice \
     WfdCommon \
     ifaa_fingerprint
+
+# Display blobs (on /system)
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.0_system \
+    vendor.display.config@1.1_system \
+    vendor.display.config@1.2_system \
+    vendor.display.config@1.3_system \
+    vendor.display.config@1.4_system \
+    vendor.display.config@1.5_system \
+    vendor.display.config@1.6_system \
+    vendor.display.config@1.7_system \
+    vendor.display.config@1.8_system
+
+# Display blobs (on /vendor)
+PRODUCT_PACKAGES += \
+    vendor.display.config@1.0 \
+    vendor.display.config@1.1 \
+    vendor.display.config@1.2 \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.4 \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.6 \
+    vendor.display.config@1.7 \
+    vendor.display.config@1.8 \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.10
+
+
