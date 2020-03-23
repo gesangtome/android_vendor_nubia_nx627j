@@ -364,4 +364,9 @@ dex_import {
 	jars: ["proprietary/framework/ifaa_fingerprint.jar"],
 }
 
+dex_import {
+	name: "tcmiface",
+	owner: "nubia",
+	jars: ["proprietary/framework/tcmiface.jar"],
+}
 
