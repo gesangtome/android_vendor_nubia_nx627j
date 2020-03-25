@@ -298,31 +298,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "aptxals",
-	owner: "nubia",
-	apk: "proprietary/vendor/app/aptxals/aptxals.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "com.qualcomm.qti.improvetouch.service",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "aptxalsOverlay",
-	owner: "nubia",
-	apk: "proprietary/vendor/app/aptxalsOverlay/aptxalsOverlay.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

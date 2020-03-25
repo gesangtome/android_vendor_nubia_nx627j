@@ -1804,9 +1804,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     TimeService \
     TrustZoneAccessService \
-    aptxals \
     com.qualcomm.qti.improvetouch.service \
-    aptxalsOverlay \
     QdcmFF \
     colorservice \
     WfdCommon \
