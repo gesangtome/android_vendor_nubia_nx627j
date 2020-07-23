@@ -298,9 +298,11 @@ android_app_import {
 }
 
 android_app_import {
+
 	name: "com.qualcomm.qti.improvetouch.service",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.improvetouch.service/com.qualcomm.qti.improvetouch.service.apk",
+
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
