@@ -25,7 +25,7 @@ pipeline
                         dir('/home/android/lineage-17.1/vendor/nubia/nx627j')
                         {
                             sh label: '--- Processing --- ',
-                            script: 'rsync -av $WORKSPACE/ ./ --exclude={.git*,*@tmp}'
+                            script: 'rsync -av $WORKSPACE/ ./ --exclude={.git*,.*,*@tmp}'
                         }
                     }
                     catch (e)
